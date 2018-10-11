@@ -144,10 +144,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="-110.49" y1="-63.5" x2="59.36" y2="-74.93" width="0" layer="20"/>
-<wire x1="59.36" y1="-74.93" x2="49.2" y2="80" width="0" layer="20"/>
-<wire x1="49.2" y1="80" x2="-137.16" y2="107.94" width="0" layer="20"/>
-<wire x1="-137.16" y1="107.94" x2="-110.49" y2="-63.5" width="0" layer="20"/>
+<wire x1="0.508" y1="16.129" x2="49.708" y2="14.351" width="0" layer="20"/>
+<wire x1="49.708" y1="14.351" x2="49.2" y2="80" width="0" layer="20"/>
+<wire x1="49.2" y1="80" x2="0.381" y2="78.984" width="0" layer="20"/>
+<wire x1="0.381" y1="78.984" x2="0.508" y2="16.129" width="0" layer="20"/>
+<circle x="25.4" y="25.4" radius="11.500434375" width="0.1524" layer="1"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">

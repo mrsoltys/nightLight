@@ -144,10 +144,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="1.778" y1="17.399" x2="49.708" y2="16.891" width="0" layer="20"/>
-<wire x1="49.708" y1="16.891" x2="50.47" y2="80" width="0" layer="20"/>
-<wire x1="50.47" y1="80" x2="1.651" y2="80.127" width="0" layer="20"/>
-<wire x1="1.651" y1="80.127" x2="1.778" y2="17.399" width="0" layer="20"/>
+<wire x1="1.778" y1="24.13" x2="48.26" y2="24.13" width="0" layer="20"/>
+<wire x1="48.26" y1="24.13" x2="48.26" y2="80.01" width="0" layer="20"/>
+<wire x1="48.26" y1="80.01" x2="1.651" y2="80.01" width="0" layer="20"/>
+<wire x1="1.651" y1="80.01" x2="1.778" y2="24.13" width="0" layer="20"/>
 <circle x="15.24" y="31.75" radius="11.500434375" width="0.1524" layer="49"/>
 </plain>
 <libraries>
@@ -867,7 +867,6 @@ design rules under a new name.</description>
 <wire x1="6.4008" y1="74.8284" x2="6.35" y2="74.93" width="0.1524" layer="16"/>
 <wire x1="24.0792" y1="69.9516" x2="24.13" y2="69.85" width="0.1524" layer="16"/>
 <wire x1="26.67" y1="69.9516" x2="26.67" y2="69.85" width="0.1524" layer="1"/>
-<wire x1="27.9908" y1="40.6908" x2="27.8892" y2="40.6908" width="0.1524" layer="1"/>
 <contactref element="GND_2" pad="1"/>
 <contactref element="GND" pad="1"/>
 <contactref element="C1" pad="-"/>
@@ -876,10 +875,9 @@ design rules under a new name.</description>
 <wire x1="24.13" y1="69.85" x2="26.67" y2="69.9516" width="0" layer="19" extent="1-1"/>
 <wire x1="6.4008" y1="74.8284" x2="24.0792" y2="69.9516" width="0" layer="19" extent="16-16"/>
 <wire x1="36.83" y1="49.53" x2="26.67" y2="69.85" width="0" layer="19" extent="1-1"/>
-<wire x1="27.9908" y1="40.6908" x2="36.83" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="17.54" y1="35.95" x2="27.8892" y2="40.6908" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="31.75" x2="36.83" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="17.54" y1="35.95" x2="36.83" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="19.1931375" y1="31.769340625" x2="17.54" y2="35.95" width="0" layer="19" extent="1-1"/>
-<wire x1="43.18" y1="31.75" x2="27.9908" y2="40.6908" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="JP1" pad="1"/>

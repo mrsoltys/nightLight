@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.095" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -144,10 +144,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="49.2" y2="0" width="0" layer="20"/>
-<wire x1="49.2" y1="0" x2="49.2" y2="80" width="0" layer="20"/>
-<wire x1="49.2" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="-110.49" y1="-63.5" x2="59.36" y2="-74.93" width="0" layer="20"/>
+<wire x1="59.36" y1="-74.93" x2="49.2" y2="80" width="0" layer="20"/>
+<wire x1="49.2" y1="80" x2="-137.16" y2="107.94" width="0" layer="20"/>
+<wire x1="-137.16" y1="107.94" x2="-110.49" y2="-63.5" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -826,25 +826,25 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-12183" x="109.22" y="88.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="44.196" y="43.18" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="DIN" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="-93.98" y="-13.97">
-<attribute name="NAME" x="-100.4062" y="-1.9812" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-100.33" y="-6.985" size="1.27" layer="27"/>
+<element name="DIN" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="23.359275" y="21.437159375">
+<attribute name="NAME" x="21.759075" y="18.947959375" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="17.009275" y="28.422159375" size="1.27" layer="27"/>
 </element>
-<element name="DOUT" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="-99.06" y="-8.89">
-<attribute name="NAME" x="-100.4062" y="-7.0612" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-100.33" y="-12.065" size="1.27" layer="27"/>
+<element name="DOUT" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="23.09660625" y="29.4042125">
+<attribute name="NAME" x="21.75040625" y="31.2330125" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="21.82660625" y="26.2292125" size="1.27" layer="27"/>
 </element>
-<element name="VDD" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="-99.06" y="-13.97">
-<attribute name="NAME" x="-100.4062" y="-12.1412" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-100.33" y="-17.145" size="1.27" layer="27"/>
+<element name="VDD" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="27.443065625" y="21.2588">
+<attribute name="NAME" x="26.096865625" y="23.0876" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="26.173065625" y="18.0838" size="1.27" layer="27"/>
 </element>
-<element name="GND" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="-92.71" y="-8.89">
-<attribute name="NAME" x="-100.4062" y="-17.2212" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-100.33" y="-22.225" size="1.27" layer="27"/>
+<element name="GND" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="29.3531375" y="25.419340625">
+<attribute name="NAME" x="28.8959375" y="21.914140625" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="21.7331375" y="12.084340625" size="1.27" layer="27"/>
 </element>
-<element name="GND_2" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="-99.06" y="-3.81">
-<attribute name="NAME" x="-100.4062" y="-22.3012" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-100.33" y="-27.305" size="1.27" layer="27"/>
+<element name="GND_2" library="NeoPixelRing" package="1X01-CLEANBIG" value="" x="27.7" y="29.6">
+<attribute name="NAME" x="26.3538" y="26.3488" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="26.43" y="6.105" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -880,8 +880,8 @@ design rules under a new name.</description>
 <contactref element="GND" pad="1"/>
 <contactref element="C1" pad="-"/>
 <wire x1="26.67" y1="69.9516" x2="34.33" y2="73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="-92.71" y1="-8.89" x2="20.32" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-99.06" y1="-3.81" x2="-92.71" y2="-8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="29.3531375" y1="25.419340625" x2="20.32" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="27.7" y1="29.6" x2="29.3531375" y2="25.419340625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="JP1" pad="1"/>
@@ -890,7 +890,7 @@ design rules under a new name.</description>
 <wire x1="6.4008" y1="77.5716" x2="3.81" y2="77.47" width="0.1524" layer="1"/>
 <contactref element="VDD" pad="1"/>
 <contactref element="C1" pad="+"/>
-<wire x1="3.81" y1="77.47" x2="-99.06" y2="-13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="77.47" x2="27.443065625" y2="21.2588" width="0" layer="19" extent="1-1"/>
 <wire x1="39.33" y1="73.66" x2="6.4008" y2="77.5716" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A0">
@@ -961,7 +961,7 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="DIN" pad="1"/>
 <contactref element="R1" pad="P$1"/>
-<wire x1="39.37" y1="39.37" x2="-93.98" y2="-13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="39.37" x2="23.359275" y2="21.437159375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D6">
 <contactref element="R1" pad="P$2"/>

@@ -177,6 +177,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="3.175" y1="2.54" x2="1.905" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="3.175" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
 </package>
+<package name="CPOL-RADIAL-2.5MM-5MM">
+<description>2.5 mm spaced PTHs with 5 mm diameter outline and standard solder mask</description>
+<pad name="1" x="1.25" y="0" drill="0.7" diameter="1.651" shape="square"/>
+<pad name="2" x="-1.25" y="0" drill="0.7" diameter="1.651"/>
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="21"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-0.742" y1="1.397" x2="-1.758" y2="1.397" width="0.2032" layer="21"/>
+<wire x1="1.758" y1="1.397" x2="0.742" y2="1.397" width="0.2032" layer="21"/>
+<wire x1="1.25" y1="1.905" x2="1.25" y2="0.889" width="0.2032" layer="21"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Aesthetics">
@@ -589,6 +600,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-DiscreteSemi">
+<description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
+This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="TO-92-EZ">
+<wire x1="-0.7863" y1="2.5485" x2="-2.0946" y2="-1.651" width="0.2032" layer="21" curve="111.098962"/>
+<wire x1="2.0945" y1="-1.651" x2="0.7863" y2="2.548396875" width="0.2032" layer="21" curve="111.099507"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.2032" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.2032" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.8796" stop="no"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.8796" stop="no"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.8796" stop="no"/>
+<text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<circle x="0" y="1.905" radius="1.02390625" width="0" layer="30"/>
+<circle x="1.27" y="0" radius="1.02390625" width="0" layer="30"/>
+<circle x="0" y="1.905" radius="0.508" width="0" layer="29"/>
+<circle x="-1.27" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="-1.27" y="0" radius="1.02390625" width="0" layer="30"/>
+<circle x="1.27" y="0" radius="0.508" width="0" layer="29"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -847,6 +894,26 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.1938" y="32.6988" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="16.27" y="12.455" size="1.27" layer="27"/>
 </element>
+<element name="Q1" library="SparkFun-DiscreteSemi" package="TO-92-EZ" value="200mA/40V" x="44.45" y="50.8">
+<attribute name="NAME" x="44.45" y="53.848" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="TRANS-08447" x="44.45" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="44.45" y="48.895" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="C2" library="SparkFun-Capacitors" package="CPOL-RADIAL-2.5MM-5MM" value="10uF" x="-110.49" y="24.13">
+<attribute name="NAME" x="-110.49" y="26.797" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-08440" x="-110.49" y="24.13" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-110.49" y="21.463" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="C3" library="SparkFun-Capacitors" package="CPOL-RADIAL-2.5MM-5MM" value="10uF" x="-116.84" y="24.13">
+<attribute name="NAME" x="-116.84" y="26.797" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-08440" x="-116.84" y="24.13" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-116.84" y="21.463" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="39.37" y="45.72" rot="R90">
+<attribute name="NAME" x="38.354" y="45.72" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-08375" x="39.37" y="45.72" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="40.386" y="45.72" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="VBAT">
@@ -871,6 +938,7 @@ design rules under a new name.</description>
 <contactref element="GND" pad="1"/>
 <contactref element="C1" pad="-"/>
 <wire x1="26.67" y1="69.9516" x2="26.67" y2="69.85" width="0.1524" layer="16"/>
+<contactref element="R5" pad="P$2"/>
 <wire x1="26.67" y1="69.9516" x2="33.06" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="69.85" x2="26.67" y2="69.9516" width="0" layer="19" extent="1-1"/>
 <wire x1="6.4008" y1="74.8284" x2="24.0792" y2="69.9516" width="0" layer="19" extent="16-16"/>
@@ -878,6 +946,7 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="31.75" x2="36.83" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="17.54" y1="35.95" x2="36.83" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="19.1931375" y1="31.769340625" x2="17.54" y2="35.95" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="49.53" x2="3.81" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="JP1" pad="1"/>
@@ -885,9 +954,11 @@ design rules under a new name.</description>
 <wire x1="6.4008" y1="77.5716" x2="6.35" y2="77.47" width="0.1524" layer="1"/>
 <contactref element="VDD" pad="1"/>
 <contactref element="C1" pad="+"/>
-<wire x1="6.4008" y1="77.5716" x2="38.06" y2="74.93" width="0" layer="19" extent="1-1"/>
+<contactref element="GS1" pad="A1"/>
+<wire x1="34.75" y1="64.31" x2="38.06" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="77.47" x2="34.75" y2="64.31" width="0" layer="19" extent="1-1"/>
 <wire x1="3.81" y1="77.47" x2="6.35" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="17.283065625" y1="27.6088" x2="6.35" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="17.283065625" y1="27.6088" x2="34.75" y2="64.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A0">
 <contactref element="JP1" pad="12"/>
@@ -921,12 +992,10 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="15"/>
 <contactref element="JP1" pad="D2"/>
 <wire x1="26.67" y1="54.5592" x2="26.67" y2="54.61" width="0.1524" layer="16"/>
-<wire x1="25.4508" y1="48.9204" x2="25.6032" y2="48.768" width="0.1524" layer="1"/>
-<wire x1="25.4508" y1="54.5592" x2="25.4508" y2="48.9204" width="0.1524" layer="1"/>
 <wire x1="25.4508" y1="54.5592" x2="24.13" y2="54.61" width="0.1524" layer="1"/>
 <wire x1="26.67" y1="54.7116" x2="26.67" y2="54.61" width="0.1524" layer="1"/>
 <wire x1="26.67" y1="54.7116" x2="24.13" y2="54.61" width="0.1524" layer="1"/>
-<wire x1="25.6032" y1="48.768" x2="34.29" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="54.5592" x2="34.29" y2="49.53" width="0" layer="19" extent="16-16"/>
 <wire x1="38.1" y1="31.75" x2="34.29" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
@@ -939,11 +1008,18 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="19"/>
 <contactref element="JP1" pad="D6"/>
 <wire x1="30.9372" y1="49.53" x2="31.75" y2="49.53" width="0.1524" layer="16"/>
-<wire x1="25.4508" y1="63.5508" x2="25.4508" y2="54.102" width="0.1524" layer="16"/>
 <wire x1="24.2316" y1="64.77" x2="24.13" y2="64.77" width="0.1524" layer="16"/>
-<wire x1="26.67" y1="64.77" x2="24.13" y2="64.77" width="0.1524" layer="1"/>
-<wire x1="25.4508" y1="63.5508" x2="26.67" y2="64.77" width="0" layer="19" extent="16-16"/>
-<wire x1="30.9372" y1="49.53" x2="25.4508" y2="54.102" width="0" layer="19" extent="16-16"/>
+<wire x1="24.2316" y1="64.77" x2="26.67" y2="64.77" width="0" layer="19" extent="16-16"/>
+<wire x1="30.9372" y1="49.53" x2="26.67" y2="64.77" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="A1">
+<contactref element="GS1" pad="B1"/>
+<contactref element="R5" pad="P$1"/>
+<contactref element="JP1" pad="A1"/>
+<contactref element="JP1" pad="11"/>
+<wire x1="6.35" y1="52.07" x2="41.45" y2="64.31" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="52.07" x2="6.35" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="41.91" x2="3.81" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
