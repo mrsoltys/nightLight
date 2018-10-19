@@ -1634,6 +1634,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.159" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.159" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="GAS_SENSOR">
+<description>&lt;h3&gt;Gas Sensors - MQ-3, MQ-4, MQ-6, MQ-7, MQ-8&lt;/h3&gt;
+&lt;p&gt;Footprint is orientation agnostic.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-3%20ver1.3%20-%20Manual.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 6&lt;/li&gt;
+&lt;li&gt;Diameter: 14.5 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GAS_SENSOR&lt;/li&gt;
+&lt;/ul&gt;</description>
+<circle x="0" y="0" radius="8.4" width="0.2032" layer="21"/>
+<pad name="HA" x="-4.75" y="0" drill="1.016" diameter="1.9304"/>
+<pad name="HB" x="4.75" y="0" drill="1.016" diameter="1.9304"/>
+<pad name="A1" x="-3.35" y="3.35" drill="1.016" diameter="1.9304"/>
+<pad name="A2" x="-3.35" y="-3.35" drill="1.016" diameter="1.9304"/>
+<pad name="B2" x="3.35" y="-3.35" drill="1.016" diameter="1.9304"/>
+<pad name="B1" x="3.35" y="3.35" drill="1.016" diameter="1.9304"/>
+<hole x="0" y="0" drill="3"/>
+<text x="0" y="8.509" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-8.509" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PHOTOCELL">
@@ -1662,6 +1686,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <text x="0" y="2.794" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
+</symbol>
+<symbol name="MQ-3">
+<description>&lt;h3&gt;Gas Sensors - MQ-3, MQ-4, MQ-6, MQ-7, MQ-8&lt;/h3&gt;
+&lt;p&gt;Through-hole gas sensors with a heating coil and an analog output.&lt;/p&gt;</description>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="A1" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="H1" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="B1" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="H2" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1698,6 +1736,94 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="COMP-09129"/>
 <attribute name="SF_ID" value="SEN-09088"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GAS_SENSOR" prefix="GS">
+<description>&lt;h3&gt;Gas Sensors - MQ-3, MQ-4, MQ-6, MQ-7, MQ-8&lt;/h3&gt;
+&lt;p&gt;Through-hole gas sensors with a heating coil and an analog output.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-3%20ver1.3%20-%20Manual.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8891"&gt;Gas Sensor Breakout Board&lt;/a&gt; (BOB-8891) - Breakout board compatible with all gas sensors.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8880"&gt;Alcohol Gas Sensor - MQ-3&lt;/a&gt; (SEN-08880)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9404"&gt;Methane CNG Gas Sensor - MQ-4&lt;/a&gt; (SEN-09404)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9405"&gt;LPG Gas Sensor - MQ-6&lt;/a&gt; (SEN-09405)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9403"&gt;Carbon Monoxide Sensor - MQ-7&lt;/a&gt; (SEN-09403)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10916"&gt;Hydrogen Gas Sensor - MQ-8&lt;/a&gt; (SEN-10916)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MQ-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MQ-3" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-12216"/>
+<attribute name="SF_ID" value="SEN-08880"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-4" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-11559"/>
+<attribute name="SF_ID" value="SEN-09404"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-6" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="SEN-09405"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-7" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-12214"/>
+<attribute name="SF_ID" value="SEN-09403"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-8" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-13351"/>
+<attribute name="SF_ID" value="SEN-10916"/>
 </technology>
 </technologies>
 </device>
@@ -2672,6 +2798,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
 <part name="R4" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-1%" value="10k"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="GS1" library="SparkFun-Sensors" deviceset="GAS_SENSOR" device="MQ-3"/>
 </parts>
 <sheets>
 <sheet>
@@ -2690,21 +2817,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="89.916" y="66.675" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="89.916" y="61.849" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R2" gate="G$1" x="-5.08" y="106.68" rot="R270">
-<attribute name="NAME" x="-3.556" y="106.68" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-6.604" y="106.68" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="R2" gate="G$1" x="-5.08" y="129.54" rot="R270">
+<attribute name="NAME" x="-3.556" y="129.54" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="-6.604" y="129.54" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="-5.08" y="149.86" rot="R270">
 <attribute name="NAME" x="-2.286" y="149.86" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="-7.874" y="149.86" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
-<instance part="J1" gate="G$1" x="66.04" y="15.24">
-<attribute name="VALUE" x="60.96" y="7.874" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="60.96" y="23.368" size="1.778" layer="95" font="vector"/>
+<instance part="J1" gate="G$1" x="-2.54" y="104.14">
+<attribute name="VALUE" x="-7.62" y="96.774" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-7.62" y="112.268" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="R4" gate="G$1" x="96.52" y="20.32">
-<attribute name="NAME" x="96.52" y="21.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="96.52" y="18.796" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R4" gate="G$1" x="7.62" y="96.52" rot="R90">
+<attribute name="NAME" x="6.096" y="96.52" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.144" y="96.52" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-15.24" y="-20.32"/>
 <instance part="FRAME1" gate="V" x="132.08" y="-20.32">
@@ -2714,6 +2841,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="DESIGNER" x="155.194" y="-9.144" size="2.7432" layer="94" font="vector"/>
 <attribute name="REV" x="220.98" y="-13.716" size="2.7432" layer="94" font="vector"/>
 </instance>
+<instance part="GS1" gate="G$1" x="78.74" y="147.32">
+<attribute name="NAME" x="71.12" y="152.654" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="71.12" y="144.526" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2721,8 +2852,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="GND" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
-<label x="12.7" y="101.6" size="1.778" layer="95"/>
+<wire x1="-5.08" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
+<label x="10.16" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND@2"/>
@@ -2734,14 +2865,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="162.56" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 <label x="172.72" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="2.54" y1="109.22" x2="5.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="109.22" x2="5.08" y2="109.22" width="0.1524" layer="91"/>
+<label x="15.24" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="P$1"/>
-<wire x1="-5.08" y1="157.48" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="157.48" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
-<label x="12.7" y="157.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="VIN"/>
 <wire x1="119.38" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
@@ -2757,11 +2888,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R3" gate="G$1" pin="P$2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="142.24" x2="-5.08" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="142.24" x2="-5.08" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="142.24" x2="-5.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="142.24" x2="-5.08" y2="137.16" width="0.1524" layer="91"/>
 <junction x="-5.08" y="142.24"/>
-<wire x1="-5.08" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
-<label x="10.16" y="124.46" size="1.778" layer="95"/>
+<wire x1="-5.08" y1="137.16" x2="7.62" y2="137.16" width="0.1524" layer="91"/>
+<label x="10.16" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="P$1"/>
+<wire x1="-5.08" y1="157.48" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="157.48" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
+<label x="10.16" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="+3V3"/>
+<wire x1="162.56" y1="81.28" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
+<label x="172.72" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="101.6" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<junction x="7.62" y="91.44"/>
+<label x="15.24" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
+<label x="15.24" y="104.14" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="104.14" x2="10.16" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="101.6" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
+<junction x="7.62" y="104.14"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="D2"/>
+<wire x1="162.56" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
+<label x="172.72" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
