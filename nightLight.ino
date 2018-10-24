@@ -16,11 +16,14 @@ int currentTime=0;
 //////////////////////////////
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS      7
-#define PIN 6
+#define PIN 6         
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMPIXELS, PIN, WS2812B);
 
 void setup(){
-  pinMode(A0,INPUT);
+  pinMode(A5,INPUT);  // Photocell
+  pinMode(D2, INPUT); // Temp Humidity
+  pinMode(A1, INPUT); // Methane
+  pinMode(D3, OUTPUT); // PWM Heater for Methan Sensor
 
   // Iniltize Neopixels
   strip.begin();
