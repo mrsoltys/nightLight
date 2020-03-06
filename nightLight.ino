@@ -142,24 +142,24 @@ void loop(){
 void dispTemp(int temp, byte n){
 int rVal=0, gVal=0, bVal=0;
     // constrain temp between 0 and 100 F
-    temp=constrain(temp, 0, 100);
+    temp=constrain(temp, 10, 100);
     
     // Map Temp to Correct Temp.
     //100 - Red        255,   0,   0
     //    - orange
-    //80  - Yellow     255, 255,   0
+    //85  - Yellow     255, 255,   0
     //60  - Green        0, 255,   0
     //45  - Blue Green   0, 255, 255
     //30  - Blue         0,   0, 255
     //    - indigo
-    //0   - Violet     255,   0, 255
+    //10   - Violet     255,   0, 255
 
-    if (temp>=80){
+    if (temp>=85){
         rVal=255;
-        gVal=map(temp,80,100,255,0);
+        gVal=map(temp,85,100,255,0);
     }
     else if (temp>=60){
-        rVal=map(temp,60,80,0,255);
+        rVal=map(temp,60,85,0,255);
         gVal=255;
     }
     else if (temp>=45){
@@ -171,7 +171,7 @@ int rVal=0, gVal=0, bVal=0;
         bVal=255;
     }
     else{
-        rVal=map(temp,0,30,255,0);
+        rVal=map(temp,10,30,255,0);
         bVal=255;
     }
     strip.setPixelColor(n, rVal, gVal, bVal);
