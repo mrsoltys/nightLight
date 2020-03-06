@@ -82,6 +82,7 @@ void setup(){
 
   // Iniltize Neopixels
   strip.begin();
+  strip.setBrightness(64);
   strip0.begin();
   strip1.begin();
   strip2.begin();
