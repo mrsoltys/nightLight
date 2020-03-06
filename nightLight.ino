@@ -152,7 +152,7 @@ int rVal=0, gVal=0, bVal=0;
     //50  - Blue Green   0, 255, 255
     //40  - Blue         0,   0, 255
     //    - indigo
-    //15   - Violet     255,   0, 255
+    //20   - Violet     255,   0, 255
 
     if (temp>=70){
         rVal=255;
