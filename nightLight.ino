@@ -90,7 +90,7 @@ void setup(){
   strip.show();
 
   // Initilize Time (And correct for DST)
-    Time.zone(-5);
+    Time.zone(-7);
     if(Time.isDST())
         Time.beginDST();
     else
@@ -102,7 +102,7 @@ void loop(){
   
  //Display Time
    showMinute(Time.minute());
-   showHour(Time.hour()-1,Time.minute());
+   showHour(Time.hour(),Time.minute());
 
  //Update Traffic Every 10 minutes
    if((Time.now()-updateTrafficTime)>=600)
@@ -141,37 +141,37 @@ void loop(){
 
 void dispTemp(int temp, byte n){
 int rVal=0, gVal=0, bVal=0;
-    // constrain temp between 0 and 100 F
-    temp=constrain(temp, 10, 100);
+    // constrain temp between 20 and 90 F
+    temp=constrain(temp, 20, 90);
     
     // Map Temp to Correct Temp.
     //100 - Red        255,   0,   0
     //    - orange
-    //85  - Yellow     255, 255,   0
+    //70  - Yellow     255, 255,   0
     //60  - Green        0, 255,   0
-    //45  - Blue Green   0, 255, 255
-    //30  - Blue         0,   0, 255
+    //50  - Blue Green   0, 255, 255
+    //40  - Blue         0,   0, 255
     //    - indigo
-    //10   - Violet     255,   0, 255
+    //15   - Violet     255,   0, 255
 
-    if (temp>=85){
+    if (temp>=70){
         rVal=255;
-        gVal=map(temp,85,100,255,0);
+        gVal=map(temp,70,90,255,0);
     }
     else if (temp>=60){
-        rVal=map(temp,60,85,0,255);
+        rVal=map(temp,60,70,0,255);
         gVal=255;
     }
-    else if (temp>=45){
+    else if (temp>=50){
         gVal=255;
-        bVal=map(temp,45,60,255,0);
+        bVal=map(temp,50,60,255,0);
     }
-    else if (temp>=30){
-        gVal=map(temp,30,45,0,255);
+    else if (temp>=40){
+        gVal=map(temp,40,50,0,255);
         bVal=255;
     }
     else{
-        rVal=map(temp,10,30,255,0);
+        rVal=map(temp,20,40,255,0);
         bVal=255;
     }
     strip.setPixelColor(n, rVal, gVal, bVal);
