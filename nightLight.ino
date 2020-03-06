@@ -113,13 +113,13 @@ void loop(){
  //Update Current Temp every 6 minutes
     if((Time.now()-updateCurWeatherTime)>=360)
             getWeather(); 
-    dispTemp(temp0,3);dispTemp(temp0,4);
+    dispTemp(temp0,3);dispTemp(temp0,6);
 
   //Update Forecast every 3 hours and 1 minute
     if((Time.now()-updateForecastTime)>=10860)
             getWeatherForecast(); 
     dispTemp(tempMax,1);dispTemp(tempMax,2);
-    dispTemp(tempMin,5);dispTemp(tempMin,6);
+    dispTemp(tempMin,4);dispTemp(tempMin,5);
 
   //Update Sensors
     lightReading = constrain(map(analogRead(A5),1850,250,100,255),0,255);
