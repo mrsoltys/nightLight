@@ -90,7 +90,7 @@ void setup(){
   strip.show();
 
   // Initilize Time (And correct for DST)
-    Time.zone(-7);
+    Time.zone(-6);
     if(Time.isDST())
         Time.beginDST();
     else
@@ -113,13 +113,13 @@ void loop(){
  //Update Current Temp every 6 minutes
     if((Time.now()-updateCurWeatherTime)>=360)
             getWeather(); 
-    dispTemp(temp0,3);dispTemp(temp0,6);
+    dispTemp(temp0,3);dispTemp(temp0,0);
 
   //Update Forecast every 3 hours and 1 minute
     if((Time.now()-updateForecastTime)>=10860)
             getWeatherForecast(); 
-    dispTemp(tempMax,1);dispTemp(tempMax,2);
-    dispTemp(tempMin,4);dispTemp(tempMin,5);
+    dispTemp(tempMax,5);dispTemp(tempMax,6);
+    dispTemp(tempMin,2);dispTemp(tempMin,4);
 
   //Update Sensors
     lightReading = constrain(map(analogRead(A5),1850,250,100,255),0,255);
